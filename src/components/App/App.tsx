@@ -2,12 +2,14 @@ import React from 'react';
 
 import { Header } from '../shared/Header';
 
-import './App.css';
+import { GlobalStyles } from '../../styles/Global';
+import { AppContainer } from './App.styled';
 
 export const App = () => {
   return (
-    <div className="App">
+    <AppContainer>
+      <GlobalStyles />
       <Header />
-    </div>
+    </AppContainer>
   );
 };
